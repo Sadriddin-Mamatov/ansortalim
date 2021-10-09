@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Kurslar from "./components/Kurslar";
+import Ustozlar from "./components/Ustozlar";
+import Yangiliklar from "./components/Yangiliklar";
+import Izohlar from "./components/Izohlar";
+import Lavhalar from "./components/Lavhalar";
+import Aloqa from "./components/Aloqa";
+import Linklar from "./components/Linklar";
+import Footer from "./components/Footer";
+// import Background from "./components/Background";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Background /> */}
+      <Header />
+      <main className="main">
+        <Yangiliklar />
+        <Kurslar />
+        <Ustozlar />
+        <Izohlar />
+        <Lavhalar />
+        <Aloqa />
+        <Linklar />
+      </main>
+      <Footer />
+    </>
   );
 }
 
 export default App;
+
